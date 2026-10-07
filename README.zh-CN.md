@@ -2,7 +2,7 @@
 
 [English](README.md) | [日本語](README.ja-JP.md) | [Русский](README.ru.md)
 
-**实时全球情报仪表盘** — 在统一的态势感知界面中，汇集 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪。
+**实时全球情报仪表盘** — 在统一的态势感知界面中，汇集 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪，保持实时更新。
 
 [![GitHub stars](https://img.shields.io/github/stars/koala73/worldmonitor?style=social)](https://github.com/koala73/worldmonitor/stargazers)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
@@ -66,9 +66,9 @@
 
 所有站点变体和桌面二进制文件均从同一代码库构建，并通过同一发布流程交付。下表说明维护状态，帮助你判断哪些产品形态可放心依赖。
 
-| 产品形态 | 状态 | 说明 |
-|---------|--------|-------|
-| `worldmonitor.app`、`tech.`、`finance.`、`commodity.`、`happy.`、`energy.` | 稳定 | 从本仓库构建的公开部署，持续维护中 |
+| 产品形态                                                                       | 状态 | 说明                                                                           |
+| ------------------------------------------------------------------------------ | ---- | ------------------------------------------------------------------------------ |
+| `worldmonitor.app`、`tech.`、`finance.`、`commodity.`、`happy.`、`energy.`     | 稳定 | 从本仓库构建的公开部署，持续维护中                                             |
 | 桌面二进制文件（Windows / macOS Apple Silicon / macOS Intel / Linux AppImage） | 稳定 | 一个可在应用内切换变体的 Tauri 二进制文件；当前 CI 发布目标为 `full` 和 `tech` |
 
 上述任一产品形态的问题都会进入同一待办队列；请查看[问题看板](https://github.com/koala73/worldmonitor/issues)了解当前公开工作。
@@ -104,14 +104,14 @@ npm run dev:energy     # energy.worldmonitor.app
 
 ## 技术栈
 
-| 类别 | 技术 |
-|----------|-------------|
-| **前端** | Vanilla TypeScript、Vite、globe.gl + Three.js、deck.gl + MapLibre GL |
-| **桌面** | Tauri 2（Rust）与 Node.js sidecar |
-| **AI/ML** | Ollama / OpenRouter、Transformers.js（浏览器端） |
-| **API 契约** | Protocol Buffers 与 sebuf HTTP 注解 |
-| **部署** | Vercel Edge Functions、Railway 中继、Tauri、PWA |
-| **缓存** | Redis（Upstash）、3 层缓存、CDN、service worker |
+| 类别         | 技术                                                                 |
+| ------------ | -------------------------------------------------------------------- |
+| **前端**     | Vanilla TypeScript、Vite、globe.gl + Three.js、deck.gl + MapLibre GL |
+| **桌面**     | Tauri 2（Rust）与 Node.js sidecar                                    |
+| **AI/ML**    | Ollama / OpenRouter、Transformers.js（浏览器端）                     |
+| **API 契约** | Protocol Buffers 与 sebuf HTTP 注解                                  |
+| **部署**     | Vercel Edge Functions、Railway 中继、Tauri、PWA                      |
+| **缓存**     | Redis（Upstash）、3 层缓存、CDN、service worker                      |
 
 完整技术栈详情请参阅**[架构文档](https://www.worldmonitor.app/docs/zh/architecture)**。
 
@@ -164,13 +164,13 @@ npm run build:full       # Production build
 
 源代码采用 **AGPL-3.0-only** 许可。在遵守 AGPL copyleft 和源代码可用条款的前提下，允许商业使用。
 
-| 使用场景 | 是否允许？ |
-|----------|----------|
-| 个人 / 研究 / 教育 | 是，采用 AGPL-3.0-only |
-| 自托管实例 | 是，采用 AGPL-3.0-only |
-| Fork 并修改 | 是，需要时须以 AGPL-3.0-only 共享源代码 |
-| 商业使用 / SaaS | 是，在遵守 AGPL 义务的前提下采用 AGPL-3.0-only |
-| 私有源代码的专有使用或官方品牌权利 | 需要单独的商业许可或商标许可 |
+| 使用场景                           | 是否允许？                                     |
+| ---------------------------------- | ---------------------------------------------- |
+| 个人 / 研究 / 教育                 | 是，采用 AGPL-3.0-only                         |
+| 自托管实例                         | 是，采用 AGPL-3.0-only                         |
+| Fork 并修改                        | 是，需要时须以 AGPL-3.0-only 共享源代码        |
+| 商业使用 / SaaS                    | 是，在遵守 AGPL 义务的前提下采用 AGPL-3.0-only |
+| 私有源代码的专有使用或官方品牌权利 | 需要单独的商业许可或商标许可                   |
 
 完整的代码许可证请参阅 [LICENSE](LICENSE)，通俗语言摘要请参阅 [docs/zh/license.mdx](docs/zh/license.mdx)。对于需要非 AGPL 条款的团队，可选择商业许可。
 
