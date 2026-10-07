@@ -2,4 +2,3 @@ runoob.com
 apple.com
 google.com
 baidu.com
-</import>  
